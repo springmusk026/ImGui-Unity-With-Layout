@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/data/data/com.itsaky.androidide/files/framework/android-sdk/cmake/bin/ninja",
+      "-C",
+      "/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/.cxx/Debug/6m5k4f26/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/data/data/com.itsaky.androidide/files/framework/android-sdk/cmake/bin/ninja",
+    "-C",
+    "/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/.cxx/Debug/6m5k4f26/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "native-lib",
+      "output": "/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/data/data/com.itsaky.androidide/files/framework/android-sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-aarch64/bin/clang.lld",
+      "cppCompilerExecutable": "/data/data/com.itsaky.androidide/files/framework/android-sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-aarch64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,0 +1,7 @@
+Executable : /data/data/com.itsaky.androidide/files/framework/android-sdk/cmake/bin/ninja
+arguments : 
+-C
+/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/.cxx/Debug/6m5k4f26/arm64-v8a
+native-lib
+jvmArgs : 
+

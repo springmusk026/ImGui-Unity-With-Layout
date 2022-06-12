@@ -1,0 +1,25 @@
+# ninja log v5
+31	3999	1655020636942330899	CMakeFiles/native-lib.dir/ImGui/imgui.cpp.o	5e57af6a5acbeaaf
+32	2251	1655020635112330899	CMakeFiles/native-lib.dir/ImGui/imgui_draw.cpp.o	69f574d112c137d4
+38	3677	1655020636632330899	CMakeFiles/native-lib.dir/ImGui/imgui_widgets.cpp.o	dab6d50db13c4d08
+43	769	1655020633692330900	CMakeFiles/native-lib.dir/ImGui/backends/imgui_impl_opengl3.cpp.o	fe524750a24e7ce0
+32	2495	1655020635462330899	CMakeFiles/native-lib.dir/ImGui/imgui_demo.cpp.o	16978d89247f13ac
+39	1814	1655020634752330900	CMakeFiles/native-lib.dir/ImGui/imgui_tables.cpp.o	92909e736c9a17bb
+31	696	1655020665502330888	CMakeFiles/native-lib.dir/ImGui/backends/imgui_impl_opengl3.cpp.o	1d4d2499fb1c4985
+30	2069	1655020666832330887	CMakeFiles/native-lib.dir/ImGui/imgui_tables.cpp.o	bb4def74faa41b0b
+25	2897	1655020667672330887	CMakeFiles/native-lib.dir/ImGui/imgui_demo.cpp.o	62850b9a9bde1034
+16	2946	1655020667742330887	CMakeFiles/native-lib.dir/native-lib.cpp.o	3e28f3f44561fcc6
+30	3288	1655020668102330887	CMakeFiles/native-lib.dir/ImGui/imgui_widgets.cpp.o	5e748e2804e712b4
+23	3378	1655020668222330887	CMakeFiles/native-lib.dir/ImGui/imgui_draw.cpp.o	38dee573eaa5366b
+17	3656	1655020668502330887	CMakeFiles/native-lib.dir/ImGui/imgui.cpp.o	e1603c343676ff5b
+3657	4042	1655020668902330887	/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so	f9ac8063289b2c2e
+10	1147	1655021418182330601	CMakeFiles/native-lib.dir/native-lib.cpp.o	3e28f3f44561fcc6
+1149	1744	1655021418842330600	/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so	f9ac8063289b2c2e
+106	3651	1655022029542330368	CMakeFiles/native-lib.dir/native-lib.cpp.o	3e28f3f44561fcc6
+3652	4453	1655022030382330367	/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so	f9ac8063289b2c2e
+24	1097	1655022511542330184	CMakeFiles/native-lib.dir/native-lib.cpp.o	3e28f3f44561fcc6
+1100	1732	1655022512182330183	/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so	f9ac8063289b2c2e
+17	1345	1655023568912329780	CMakeFiles/native-lib.dir/native-lib.cpp.o	3e28f3f44561fcc6
+1349	2027	1655023569572329780	/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so	f9ac8063289b2c2e
+105	2098	1655023738922329715	CMakeFiles/native-lib.dir/native-lib.cpp.o	3e28f3f44561fcc6
+2104	2853	1655023739742329715	/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so	f9ac8063289b2c2e

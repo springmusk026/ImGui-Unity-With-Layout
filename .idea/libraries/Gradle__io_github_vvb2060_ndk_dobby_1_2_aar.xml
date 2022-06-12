@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.vvb2060.ndk:dobby:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9ad8da2816cf4306737b8c03d915911d/transformed/dobby-1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ad8da2816cf4306737b8c03d915911d/transformed/dobby-1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9ad8da2816cf4306737b8c03d915911d/transformed/dobby-1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vvb2060.ndk/dobby/1.2/b53e362a115312da14baa8e5d3efa5841ee34417/dobby-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.vvb2060.ndk/dobby/1.2/b53e362a115312da14baa8e5d3efa5841ee34417/dobby-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

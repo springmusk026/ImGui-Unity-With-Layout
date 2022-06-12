@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "prefabPath": "/data/data/com.itsaky.androidide/files/framework/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.0.0/f2702b5ca13df54e3ca92f29d6b403fb6285d8df/cli-2.0.0-all.jar",
+  "packages": [
+    "/data/data/com.itsaky.androidide/files/framework/.gradle/caches/transforms-3/9ad8da2816cf4306737b8c03d915911d/transformed/dobby-1.2/prefab",
+    "/data/data/com.itsaky.androidide/files/framework/.gradle/caches/transforms-3/2e7b15718b035c3e7d50a1a32619a28a/transformed/cxx-1.2.0/prefab"
+  ]
+}

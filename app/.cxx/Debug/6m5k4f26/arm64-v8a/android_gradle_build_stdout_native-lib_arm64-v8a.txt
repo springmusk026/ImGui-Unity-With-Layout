@@ -1,0 +1,12 @@
+ninja: Entering directory `/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/.cxx/Debug/6m5k4f26/arm64-v8a'
+[1/2] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+warning: unknown -Werror warning specifier: '-Werror,-Wformat-security' [-Wunknown-warning-option]
+/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/src/main/cpp/native-lib.cpp:189:52: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+                    ImGui::TextColored(color.Value,format);
+                                                   ^~~~~~
+/storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/src/main/cpp/native-lib.cpp:189:52: note: treat the string as an argument to avoid this
+                    ImGui::TextColored(color.Value,format);
+                                                   ^
+                                                   "%s", 
+2 warnings generated.
+[2/2] Linking CXX shared library /storage/emulated/0/AndroidIDEProjects/ImGui-Unity/app/build/intermediates/cxx/Debug/6m5k4f26/obj/arm64-v8a/libnative-lib.so
