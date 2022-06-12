@@ -2,7 +2,7 @@
  > 2022/06/16: Initial Comit.
 
 ImGui Template that can addapt any Unity Games 
- ![image](https://github.com/springmusk026/ImGui-Unity-With-Layout/blob/main/main.jpg?raw=true)
+ ![image](https://github.com/springmusk026/ImGui-Unity-With-Layout/blob/master/main.jpg?raw=true)
  
 # What is IMGUI?
    Imgui is basically a full stack GUI framework made with c++ which supports lots of operatinh systems
