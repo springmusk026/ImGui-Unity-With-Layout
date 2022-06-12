@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-		// Remove this line if you don't want AndroidIDE to show this app's logs
 		super.onCreate(savedInstanceState);
         // Inflate and get instance of binding
 		binding = ActivityMainBinding.inflate(getLayoutInflater());
