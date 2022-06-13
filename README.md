@@ -41,6 +41,8 @@ ImGui Template that can addapt any Unity Games
 2. AIDE i will never recommend to use cause it's systems are not so good at all
 3. If you find bugs relating to this project, simply mention on the same repo so that we can improve it
 
+# Notice:
+ I am not in any race of releasing first or last but yes i provide the cleaniest sources with proper credit of creators , those who dont have much mind let them keep it doing (your ego is useless in front of this world )
 # Codes 
 ![image](https://github.com/springmusk026/ImGui-Unity-With-Layout/blob/master/a.jpg?raw=true)
 ![image](https://github.com/springmusk026/ImGui-Unity-With-Layout/blob/master/b.jpg?raw=true)
