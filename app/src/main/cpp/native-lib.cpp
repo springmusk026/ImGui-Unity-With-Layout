@@ -4,15 +4,27 @@
 #include <dobby.h>
 #include <EGL/egl.h>
 #include <GLES2/gl2.h>
+#include <pthread.h>
 #include "imgui.h"
 #include "imgui_internal.h"
 #include "backends/imgui_impl_opengl3.h"
+#include "backends/imgui_impl_android.h"
 #include "Utils.h"
 #include "Unity.h"
 
 
 int  glWidth, glHeight;
 
+
+#define HOOK(ret, func, ...) \
+    ret (*orig##func)(__VA_ARGS__); \
+    ret my##func(__VA_ARGS__)
+
+HOOK(void, Input, void *thiz, void *ex_ab, void *ex_ac){
+    origInput(thiz, ex_ab, ex_ac);
+    ImGui_ImplAndroid_HandleInputEvent((AInputEvent *)thiz);
+    return;
+}
 
 void SetupImgui() {
     // Setup Dear ImGui context
@@ -102,40 +114,6 @@ void SetupImgui() {
 }
 
 bool clearMousePos = true, setup = false;
-
-struct UnityEngine_Vector2_Fields {
-    float x;
-    float y;
-};
-
-struct UnityEngine_Vector2_o {
-    UnityEngine_Vector2_Fields fields;
-};
-
-enum TouchPhase {
-    Began = 0,
-    Moved = 1,
-    Stationary = 2,
-    Ended = 3,
-    Canceled = 4
-};
-
-struct UnityEngine_Touch_Fields {
-    int32_t m_FingerId;
-    struct UnityEngine_Vector2_o m_Position;
-    struct UnityEngine_Vector2_o m_RawPosition;
-    struct UnityEngine_Vector2_o m_PositionDelta;
-    float m_TimeDelta;
-    int32_t m_TapCount;
-    int32_t m_Phase;
-    int32_t m_Type;
-    float m_Pressure;
-    float m_maximumPossiblePressure;
-    float m_Radius;
-    float m_RadiusVariance;
-    float m_AltitudeAngle;
-    float m_AzimuthAngle;
-};
 
 void Menu(){
 	struct game_data {
@@ -230,30 +208,6 @@ EGLBoolean hook_eglSwapBuffers(EGLDisplay dpy, EGLSurface surface) {
 
     ImGuiIO &io = ImGui::GetIO();
 
-    // Is good idea to set MousePos here?
-    int touchCount = (((int (*)())(address+0x3BE0AB0))()); // public static int get_touchCount() { }
-    if (touchCount > 0) {
-        UnityEngine_Touch_Fields touch = ((UnityEngine_Touch_Fields (*)(int))(address+0x3BE06A8))(0); // public static Touch GetTouch(int index) { }
-        float reverseY = io.DisplaySize.y - touch.m_Position.fields.y;
-        switch (touch.m_Phase) {
-            case TouchPhase::Began:
-            case TouchPhase::Stationary:
-                io.MousePos = ImVec2(touch.m_Position.fields.x, reverseY);
-                io.MouseDown[0] = true;
-                break;
-            case TouchPhase::Ended:
-            case TouchPhase::Canceled:
-                io.MouseDown[0] = false;
-                clearMousePos = true;
-                break;
-            case TouchPhase::Moved:
-                io.MousePos = ImVec2(touch.m_Position.fields.x, reverseY);
-                break;
-            default:
-                break;
-        }
-    }
-
 
     // Start the Dear ImGui frame
     ImGui_ImplOpenGL3_NewFrame();
@@ -302,4 +256,16 @@ void lib_main() {
     pthread_t ptid;
     pthread_create(&ptid, NULL, imgui_go, NULL);
     
+}
+
+JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void * reserved)
+{
+    JNIEnv *env;
+    vm->GetEnv((void **) &env, JNI_VERSION_1_6);
+
+    void *sym_input = DobbySymbolResolver(("/system/lib/libinput.so"), ("_ZN7android13InputConsumer21initializeMotionEventEPNS_11MotionEventEPKNS_12InputMessageE"));
+    if (NULL != sym_input){
+        DobbyHook((void *)sym_input, (void *) myInput, (void **)&origInput);
+    }
+    return JNI_VERSION_1_6;
 }

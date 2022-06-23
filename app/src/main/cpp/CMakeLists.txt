@@ -20,6 +20,14 @@ add_library(native-lib SHARED
              ImGui/imgui_demo.cpp
              ImGui/imgui_widgets.cpp 
              ImGui/imgui_tables.cpp 
-             ImGui/backends/imgui_impl_opengl3.cpp)
+             ImGui/backends/imgui_impl_opengl3.cpp
+             ImGui/backends/imgui_impl_android.cpp)
 
-target_link_libraries(native-lib log dobby::dobby EGL GLESv1_CM GLESv2 GLESv3)
+include_directories(include
+        ${ANDROID_NDK}/sources/android/native_app_glue)
+
+target_include_directories(native-lib PRIVATE
+        ${ANDROID_NDK}/sources/android/native_app_glue
+        )
+
+target_link_libraries(native-lib log dobby::dobby android EGL GLESv1_CM GLESv2 GLESv3)
