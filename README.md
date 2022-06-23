@@ -54,4 +54,5 @@ ImGui Template that can addapt any Unity Games
 * Jackknobel/Ocornut - IMGUI : https://github.com/ocornut/imgui
 * vvb2060 - DobbyHook - https://github.com/vvb2060/dobby-android
 * Ztz - IMGUI template https://github.com/ZTzTopia
+* xo1337 - Layout Base : https://www.youtube.com/watch?v=Sn3q7LjG-kA
 
